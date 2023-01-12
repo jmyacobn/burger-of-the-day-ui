@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Recipes from '../RecipeContainer/RecipeContainer';
 import './App.css';
 
 class App extends Component {
@@ -95,6 +96,7 @@ class App extends Component {
     return (
       <main className='App'>
         <h1>Burger of the Day</h1>
+        <Recipes recipes={this.state.recipes} />
       </main>
     )
   }
