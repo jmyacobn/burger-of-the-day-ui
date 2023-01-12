@@ -1,0 +1,9 @@
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}

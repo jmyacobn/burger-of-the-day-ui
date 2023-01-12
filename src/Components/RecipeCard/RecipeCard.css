@@ -1,0 +1,33 @@
+.recipe-card {
+  background-color: #868e96;
+  border: solid 1px black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  outline: 15px;
+  outline-color: #a13d2d;
+  outline-style: outset;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center;
+  height: 40vh;
+}
+
+.label {
+  height: 20%;
+}
+
+.name {
+  height: 55%;
+  align-items: center;
+  display: flex;
+}
+
+.price {
+  height: 25%;
+}
+
+p {
+  font-size: 1.5em;
+}
