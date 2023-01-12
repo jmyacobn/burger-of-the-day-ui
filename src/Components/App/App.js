@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Recipes from '../RecipeContainer/RecipeContainer';
+import NavBar from '../NavBar/NavBar'
 import './App.css';
 
 class App extends Component {
@@ -94,10 +95,13 @@ class App extends Component {
 
   render() {
     return (
-      <main className='App'>
-        <h1>Burger of the Day</h1>
-        <Recipes recipes={this.state.recipes} />
-      </main>
+      <div className="App">
+        <NavBar />
+        <main className='App'>
+          <Recipes recipes={this.state.recipes} />
+        </main>
+      </div>
+      
     )
   }
 }
