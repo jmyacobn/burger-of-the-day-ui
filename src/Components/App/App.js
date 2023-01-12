@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Recipes from '../RecipeContainer/RecipeContainer';
 import NavBar from '../NavBar/NavBar'
-import { importRecipes } from '../APIcalls/APIcalls';
+import { getRecipes } from '../APIcalls/APIcalls';
 import './App.css';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    importRecipes()
+    getRecipes()
       .then((data) => {
         this.setState({ recipes: data.recipes})
       })
