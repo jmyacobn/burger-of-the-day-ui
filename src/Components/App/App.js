@@ -12,6 +12,8 @@ class App extends Component {
     this.state = {
       recipes: [],
       singleRecipe: {},
+      userInput: '',
+      loading: false,
       error: ''
     }
   }
