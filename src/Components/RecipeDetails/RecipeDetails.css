@@ -15,12 +15,21 @@
 }
 
 h1 {
+  font-size: 4em;
+}
+
+p {
+  font-family: 'Gloria Hallelujah';
+}
+
+.recipe-details {
   font-size: 2em;
 }
 
 .recipe-instructions {
   display: flex;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-family: 'Gloria Hallelujah';
 }
 
 .ingredients {
@@ -43,4 +52,8 @@ ul {
 
 li:first-child {
   padding-top: 2vh;
+}
+
+ul, ol, li {
+  font-family: 'Gloria Hallelujah';
 }

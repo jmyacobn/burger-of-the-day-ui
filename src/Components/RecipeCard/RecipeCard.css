@@ -12,6 +12,7 @@
   padding-right: 2vw;
   text-align: center;
   height: 40vh;
+  font-size: 1.25em;
 }
 
 .label {
@@ -19,15 +20,21 @@
 }
 
 .name {
-  height: 55%;
+  height: 50%;
   align-items: center;
   display: flex;
 }
 
 .price {
-  height: 25%;
+  height: 30%;
 }
 
 p {
   font-size: 1.5em;
+  margin: 2vh;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 2vh;
 }
