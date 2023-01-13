@@ -3,6 +3,7 @@ import Recipes from '../RecipeContainer/RecipeContainer';
 import RecipeDetails from '../RecipeDetails/RecipeDetails';
 import NavBar from '../NavBar/NavBar'
 import { getRecipes } from '../APIcalls/APIcalls';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -26,7 +27,7 @@ class App extends Component {
   }
 
   viewRecipe = (id) => {
-    const singleRecipe = this.state.recipes.filter(recipe => {
+    const singleRecipe = this.state.recipes.find(recipe => {
       return id === recipe.id
     })
     this.setState({ singleRecipe: singleRecipe})
@@ -34,11 +35,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className='app'>
         <NavBar />
         <main className='main'>
-          <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
-          <RecipeDetails singleRecipe={this.state.singleRecipe}/>
+          <Switch>
+            <Route exact path='/'>
+              <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
+            </Route>
+            <Route exact path='/recipe/:id' render={( {match} ) => {
+              return <RecipeDetails singleRecipe={this.state.singleRecipe} id={match.params.id}/>
+            }}/>
+            <Route exact path='/recipe/:id'>
+              <RecipeDetails singleRecipe={this.state.singleRecipe}/>
+            </Route>
+          </Switch>
+          
+
         </main>
       </div>
       

@@ -1,0 +1,32 @@
+.main {
+  /* display: flex;
+  align-items: center; */
+  border: solid 2px purple;
+}
+
+.single-recipe {
+  background-color: #868e96;
+  border: solid 30px #a13d2d;
+  color: white;
+  min-height: 75vh;
+  margin: 10vh;
+  padding-top: 0;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.recipe-instructions {
+  display: flex;
+  border: solid 2px purple;
+}
+
+.ingredients {
+  border: solid 2px purple;
+  width: 20%;
+}
+
+.directions {
+  border: solid 2px purple;
+  width: 80%;
+}
