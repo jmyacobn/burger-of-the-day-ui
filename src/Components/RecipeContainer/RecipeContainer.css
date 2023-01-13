@@ -1,5 +1,6 @@
 .recipe-container {
   display: grid;
+  background-color: #ffebb0;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6vw;
   margin-left: 4vw;
