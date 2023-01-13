@@ -1,9 +1,9 @@
 import React from 'react';
 import './RecipeCard.css';
 
-const RecipeCard = ( { id, name, price} ) => {
+const RecipeCard = ( { viewRecipe, id, name, price} ) => {
   return (
-    <div className='recipe-card' key={id}>
+    <article onClick={()=> viewRecipe(id)} className='recipe-card' key={id}>
       <div className='label'>
       <h2>Burger of the Day</h2>
       </div>
@@ -13,7 +13,7 @@ const RecipeCard = ( { id, name, price} ) => {
       <div className='price'>
         <p>{price}</p>
       </div>
-    </div>
+    </article>
   )
 }
 

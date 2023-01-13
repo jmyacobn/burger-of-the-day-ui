@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Recipes from '../RecipeContainer/RecipeContainer';
+import RecipeDetails from '../RecipeDetails/RecipeDetails';
 import NavBar from '../NavBar/NavBar'
 import { getRecipes } from '../APIcalls/APIcalls';
 import './App.css';
@@ -9,6 +10,7 @@ class App extends Component {
     super();
     this.state = {
       recipes: [],
+      singleRecipe: {},
       error: ''
     }
   }
@@ -23,12 +25,20 @@ class App extends Component {
       })
   }
 
+  viewRecipe = (id) => {
+    const singleRecipe = this.state.recipes.filter(recipe => {
+      return id === recipe.id
+    })
+    this.setState({ singleRecipe: singleRecipe})
+  }
+
   render() {
     return (
       <div className="app">
         <NavBar />
         <main className='main'>
-          <Recipes recipes={this.state.recipes} />
+          <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
+          <RecipeDetails singleRecipe={this.state.singleRecipe}/>
         </main>
       </div>
       
