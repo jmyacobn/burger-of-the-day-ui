@@ -1,28 +1,33 @@
 import './RecipeDetails.css';
 
 const RecipeDetails = ( { singleRecipe } ) => {
-  console.log(singleRecipe)
   const eachIngredient = singleRecipe.ingredients.map(ingredient => {
-    console.log(ingredient)
-    return ingredient
+    return <li>{ingredient}</li>
   })
-  const ingredientList = eachIngredient.join(", ")
+
+  let recipeSteps =[]
+  const eachInstruction = singleRecipe.instructions.forEach(instruction => {
+    return recipeSteps.push(instruction)
+  })
+
+  const eachStep = recipeSteps.map(step => {
+      return <li>{step.instruction}</li>
+  })
+  
   return (
-    <div className='single-recipe'>
+    <article className='single-recipe'>
       <h1>{singleRecipe.name}</h1>
       <p>{singleRecipe.description}</p>
       <p>Serving Size: Makes {singleRecipe.servings}.</p>
       <div className='recipe-instructions'>
         <div className='ingredients'>
-          <p>Ingredients: <br></br> <br></br> {ingredientList}</p>
+          <ul>Ingredients: {eachIngredient}</ul>
         </div>
-        <div className='directions'>
-          <p>Directions: <br></br> <br></br> asdfasdfasdfasdfasdfasdfa.asdfasdfa</p>
+        <div className='instructions'>
+          <ol type='1'>Instructions: {eachStep}</ol>
         </div>
-        
-        {/* <p>Directions: {singleRecipe.instructions}</p> */}
       </div>
-    </div>
+    </article>
   )
 }
 

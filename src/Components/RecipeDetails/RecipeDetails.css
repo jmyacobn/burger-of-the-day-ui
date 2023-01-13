@@ -1,7 +1,5 @@
 .main {
-  /* display: flex;
-  align-items: center; */
-  border: solid 2px purple;
+  display: flex;
 }
 
 .single-recipe {
@@ -18,15 +16,12 @@
 
 .recipe-instructions {
   display: flex;
-  border: solid 2px purple;
 }
 
 .ingredients {
-  border: solid 2px purple;
   width: 20%;
 }
 
-.directions {
-  border: solid 2px purple;
+.instructions {
   width: 80%;
 }

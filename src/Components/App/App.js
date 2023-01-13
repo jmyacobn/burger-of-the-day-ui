@@ -49,11 +49,8 @@ class App extends Component {
               <RecipeDetails singleRecipe={this.state.singleRecipe}/>
             </Route>
           </Switch>
-          
-
         </main>
       </div>
-      
     )
   }
 }
