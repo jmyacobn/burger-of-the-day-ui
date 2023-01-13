@@ -1,4 +1,7 @@
-.header{
+.header {
   height: 25vh;
-  font-size: 2em;
+}
+
+.title {
+  font-size: 5em;
 }
