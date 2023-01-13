@@ -2,7 +2,7 @@ import React from 'react';
 import RecipeCard from '../RecipeCard/RecipeCard'
 import './RecipeContainer.css';
 
-const Recipes = ( {recipes} ) => {
+const Recipes = ( {recipes, viewRecipe} ) => {
   const eachRecipe = recipes.map(recipe => {
     return (
       <RecipeCard
@@ -10,6 +10,7 @@ const Recipes = ( {recipes} ) => {
         id={recipe.id}
         name={recipe.name}
         price={recipe.price}
+        viewRecipe={viewRecipe}
       />
     )
   })
