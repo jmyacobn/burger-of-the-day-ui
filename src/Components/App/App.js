@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Recipes from '../RecipeContainer/RecipeContainer';
 import RecipeDetails from '../RecipeDetails/RecipeDetails';
 import NavBar from '../NavBar/NavBar'
+import SearchBar from '../SearchBar/SearchBar';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -35,10 +36,17 @@ class App extends Component {
     this.setState({ singleRecipe: singleRecipe})
   }
 
+  handleChange = (event) => {
+    this.setState({ userInput: event.target.value})
+  }
+
   render() {
     return (
       <div className='app'>
-        <NavBar />
+        <header>
+          <NavBar />
+          <SearchBar handleChange={this.handleChange}/>
+        </header>
         <main className='main'>
           <Switch>
             <Route exact path='/'>
