@@ -1,9 +1,12 @@
 import React from 'react';
+import logo from '../../../src/logo.png'
 import '../NavBar/NavBar.css'
 
 const NavBar = () => {
   return (
-    <h1 className='title'>Burger of the Day</h1>
+    <nav>
+      <img className='logo' src={logo} alt='Bobs Burgers Logo'/>
+    </nav>
   )
 }
 

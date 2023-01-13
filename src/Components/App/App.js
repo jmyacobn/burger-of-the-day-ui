@@ -5,6 +5,7 @@ import NavBar from '../NavBar/NavBar'
 import SearchBar from '../SearchBar/SearchBar';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
+import image from '../../../src/banner.jpg'
 import './App.css';
 
 class App extends Component {
@@ -43,14 +44,17 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <header>
+        <header style={{ backgroundImage:`url(${image})`}}>
           <NavBar />
-          <SearchBar handleChange={this.handleChange}/>
         </header>
         <main className='main'>
           <Switch>
             <Route exact path='/'>
-              <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
+              <section className='all-recipes'>
+                <h1 className='title'>Burger of the Day</h1>
+                <SearchBar handleChange={this.handleChange}/>
+                <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
+              </section>
             </Route>
             <Route exact path='/recipe/:id' render={( {match} ) => {
               return <RecipeDetails singleRecipe={this.state.singleRecipe} id={match.params.id}/>
