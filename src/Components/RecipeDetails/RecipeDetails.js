@@ -11,7 +11,7 @@ const RecipeDetails = ( { singleRecipe } ) => {
   })
 
   const eachStep = recipeSteps.map(step => {
-      return <li>{step.instruction}</li>
+      return <li className='step'>{step.instruction}</li>
   })
   
   return (

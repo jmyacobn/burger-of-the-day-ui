@@ -14,8 +14,13 @@
   padding-right: 2vw;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 .recipe-instructions {
   display: flex;
+  font-size: 1.25em;
 }
 
 .ingredients {
@@ -24,4 +29,18 @@
 
 .instructions {
   width: 80%;
+  margin-left: 2vw;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step {
+  text-align: left;
+}
+
+li:first-child {
+  padding-top: 2vh;
 }
