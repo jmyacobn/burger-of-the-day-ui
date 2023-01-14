@@ -40,11 +40,11 @@ class App extends Component {
   handleChange = (event) => {
     this.setState({ userInput: event.target.value})
     this.filterRecipes(event)
-  }
+    }
 
-  filterRecipes = () => {
+  filterRecipes = (event) => {
     const filteredByIngredients = this.state.recipes.filter(recipe => {
-      let value = this.state.userInput.toLowerCase()
+      let value = event.target.value.toLowerCase()
       let ingredient = recipe.ingredients.join(", ").toLowerCase()
       let description = recipe.description.toLowerCase()
       if(ingredient.includes(value) || description.includes(value)) {
