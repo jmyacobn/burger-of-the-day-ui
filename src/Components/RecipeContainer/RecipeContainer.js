@@ -2,9 +2,9 @@ import React from 'react';
 import RecipeCard from '../RecipeCard/RecipeCard'
 import './RecipeContainer.css';
 
-const Recipes = ( {recipes, viewRecipe, filteredRecipes} ) => {
+const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput} ) => {
   let recipesToDisplay
-  if(filteredRecipes.length===0) {
+  if(userInput === '') {
     recipesToDisplay = recipes;
   } else {
     recipesToDisplay = filteredRecipes;
