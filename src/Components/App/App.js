@@ -61,6 +61,7 @@ class App extends Component {
           <NavBar />
         </header>
         <main className='main'>
+          {this.state.error ? <h2 className='error'>{this.state.error}</h2> : 
           <Switch>
             <Route exact path='/'>
               <section className='all-recipes'>
@@ -76,6 +77,7 @@ class App extends Component {
               <RecipeDetails singleRecipe={this.state.singleRecipe}/>
             </Route>
           </Switch>
+          }
         </main>
       </div>
     )

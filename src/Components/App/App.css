@@ -34,3 +34,11 @@ main {
 a {
   text-decoration: none;
 }
+
+.error {
+  text-align: center;
+  width: 100%;
+  color: #ad1d07;
+  font-size: 4em;
+  margin-top: 10vh;
+}
