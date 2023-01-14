@@ -40,7 +40,7 @@ class App extends Component {
   handleChange = (event) => {
     this.setState({ userInput: event.target.value})
     this.filterRecipes(event)
-    }
+  }
 
   filterRecipes = (event) => {
     const filteredByIngredients = this.state.recipes.filter(recipe => {
@@ -66,7 +66,7 @@ class App extends Component {
               <section className='all-recipes'>
                 <h1 className='title'>Burger of the Day</h1>
                 <SearchBar handleChange={this.handleChange}/>
-                <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe}/>
+                <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe} filteredRecipes={this.state.filteredRecipes}/>
               </section>
             </Route>
             <Route exact path='/recipe/:id' render={( {match} ) => {
