@@ -1,5 +1,6 @@
 import React from 'react';
-import RecipeCard from '../RecipeCard/RecipeCard'
+import RecipeCard from '../RecipeCard/RecipeCard';
+import PropTypes from 'prop-types';
 import './RecipeContainer.css';
 
 const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput} ) => {
@@ -30,3 +31,10 @@ const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput} ) => {
 }
 
 export default Recipes;
+
+Recipes.propTypes = {
+  recipes: PropTypes.array.isRequired,
+  viewRecipe: PropTypes.func.isRequired,
+  filteredRecipes: PropTypes.array.isRequired,
+  userInput: PropTypes.string.isRequired
+}

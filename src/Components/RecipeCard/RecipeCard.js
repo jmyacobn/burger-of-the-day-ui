@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './RecipeCard.css';
 
 const RecipeCard = ( { viewRecipe, id, name, price} ) => {
@@ -21,3 +22,10 @@ const RecipeCard = ( { viewRecipe, id, name, price} ) => {
 }
 
 export default RecipeCard;
+
+RecipeCard.propTypes = {
+  viewRecipe: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+}

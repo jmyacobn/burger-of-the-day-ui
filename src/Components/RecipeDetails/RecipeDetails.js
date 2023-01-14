@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './RecipeDetails.css';
 
 const RecipeDetails = ( { singleRecipe } ) => {
@@ -42,3 +43,7 @@ const RecipeDetails = ( { singleRecipe } ) => {
 }
 
 export default RecipeDetails;
+
+RecipeDetails.propTypes = {
+  singleRecipe: PropTypes.object.isRequired
+}
