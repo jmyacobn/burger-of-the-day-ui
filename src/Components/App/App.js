@@ -21,9 +21,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.setState( {loading: true} )
     getRecipes()
       .then((data) => {
-        this.setState({ recipes: data.recipes})
+        this.setState({ recipes: data.recipes, loading: false})
       })
       .catch((error) => {
         this.setState({ error: 'Oops, something went wrong. Please try again later.' })

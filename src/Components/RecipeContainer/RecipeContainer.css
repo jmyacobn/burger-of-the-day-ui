@@ -8,3 +8,10 @@
   padding-top: 3vw;
   padding-bottom: 5vw;
 }
+
+.empty-error {
+  text-align: right;
+  width: 100vh;
+  color: #ad1d07;
+  font-size: 4em;
+}
