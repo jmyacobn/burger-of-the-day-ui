@@ -1,7 +1,11 @@
-.header {
-  height: 25vh;
+.active {
+  display: flex;
+  align-items: flex-start;
 }
 
-.title {
-  font-size: 5em;
+.logo {
+  height: 25%;
+  width: 25%;
+  padding-top: 2vh;
+  padding-left: 2vw;
 }

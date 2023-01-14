@@ -1,11 +1,16 @@
 import React from 'react';
-import '../NavBar/NavBar.css'
+import logo from '../../../src/logo.png';
+import { NavLink } from 'react-router-dom';
+import '../NavBar/NavBar.css';
 
 const NavBar = () => {
   return (
-    <header className='header'>
-      <h1 className='title'>Burger of the Day</h1>
-    </header>
+    <nav>
+      <NavLink to='/' activeClassName='active'>
+        <img className='logo' src={logo} alt='Bobs Burgers Logo'/>
+      </NavLink>
+    </nav>
+   
   )
 }
 

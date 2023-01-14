@@ -1,0 +1,12 @@
+input {
+  font-family: 'Open Sans';
+  width: 28vw;
+  height: 7vh;
+  font-size: 1.25em;
+  margin-top: 4vh;
+  border-radius: 0.7em;
+  font-style: bold;
+  border-width: medium;
+  border-style: solid;
+
+}
