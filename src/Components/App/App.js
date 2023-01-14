@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       recipes: [],
       singleRecipe: {},
+      filteredRecipes: [],
       userInput: '',
       loading: false,
       error: ''
@@ -38,6 +39,7 @@ class App extends Component {
 
   handleChange = (event) => {
     this.setState({ userInput: event.target.value})
+    this.filterRecipes()
   }
 
   render() {
