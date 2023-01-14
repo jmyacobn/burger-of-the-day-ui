@@ -3,8 +3,10 @@ import Recipes from '../RecipeContainer/RecipeContainer';
 import RecipeDetails from '../RecipeDetails/RecipeDetails';
 import NavBar from '../NavBar/NavBar'
 import SearchBar from '../SearchBar/SearchBar';
+import error from '../../../src/assets/error.png';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
+import BadURL from '../BadURL/BadURL';
 import './App.css';
 
 class App extends Component {
@@ -47,8 +49,7 @@ class App extends Component {
     const filteredByIngredients = this.state.recipes.filter(recipe => {
       let value = event.target.value.toLowerCase()
       let ingredient = recipe.ingredients.join(", ").toLowerCase()
-      let description = recipe.description.toLowerCase()
-      if(ingredient.includes(value) || description.includes(value)) {
+      if(ingredient.includes(value)) {
         return recipe
       }
     })
@@ -62,7 +63,11 @@ class App extends Component {
           <NavBar />
         </header>
         <main className='main'>
-          {this.state.error ? <h2 className='error'>{this.state.error}</h2> : 
+          {this.state.error ? (
+          <div className='error-container'>
+            <h2 className='error'>{this.state.error}</h2>
+            <img className='error-img' src={error} alt='Louise with scared look on her face.'/>  
+          </div>) : 
           <Switch>
             <Route exact path='/'>
               <section className='all-recipes'>
@@ -77,6 +82,7 @@ class App extends Component {
             <Route exact path='/recipe/:id'>
               <RecipeDetails singleRecipe={this.state.singleRecipe}/>
             </Route>
+            <Route component={BadURL}/>
           </Switch>
           }
         </main>
