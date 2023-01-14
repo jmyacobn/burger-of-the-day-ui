@@ -3,6 +3,7 @@ import Recipes from '../RecipeContainer/RecipeContainer';
 import RecipeDetails from '../RecipeDetails/RecipeDetails';
 import NavBar from '../NavBar/NavBar'
 import SearchBar from '../SearchBar/SearchBar';
+import error from '../../../src/assets/error.png';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -61,7 +62,11 @@ class App extends Component {
           <NavBar />
         </header>
         <main className='main'>
-          {this.state.error ? <h2 className='error'>{this.state.error}</h2> : 
+          {this.state.error ? (
+          <div className='error-container'>
+            <h2 className='error'>{this.state.error}</h2>
+            <img className='error-img' src={error} alt='Louise with scared look on her face.'/>  
+          </div>) : 
           <Switch>
             <Route exact path='/'>
               <section className='all-recipes'>
