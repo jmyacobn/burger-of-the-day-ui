@@ -2,7 +2,6 @@ import React from 'react';
 import RecipeCard from '../RecipeCard/RecipeCard';
 import PropTypes from 'prop-types';
 import './RecipeContainer.css';
-import RecipeDetails from '../RecipeDetails/RecipeDetails';
 
 const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput} ) => {
   let recipesToDisplay
