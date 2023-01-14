@@ -5,7 +5,6 @@ import NavBar from '../NavBar/NavBar'
 import SearchBar from '../SearchBar/SearchBar';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
-import image from '../../../src/banner.jpg'
 import './App.css';
 
 class App extends Component {
@@ -44,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <header style={{ backgroundImage:`url(${image})`}}>
+        <header>
           <NavBar />
         </header>
         <main className='main'>
