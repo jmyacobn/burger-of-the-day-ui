@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './SearchBar.css';
 
 const SearchBar = ( {handleChange} ) => {
@@ -14,3 +15,7 @@ const SearchBar = ( {handleChange} ) => {
 }
 
 export default SearchBar;
+
+SearchBar.propTypes = {
+  handleChange: PropTypes.func.isRequired
+}
