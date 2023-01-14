@@ -9,9 +9,7 @@ const Recipes = ( {recipes, viewRecipe, filteredRecipes} ) => {
   } else {
     recipesToDisplay = filteredRecipes;
   }
-  console.log(filteredRecipes.length)
   
-
   const eachRecipe = recipesToDisplay.map(recipe => {
     return (
       <RecipeCard
