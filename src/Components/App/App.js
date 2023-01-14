@@ -34,7 +34,7 @@ class App extends Component {
     const singleRecipe = this.state.recipes.find(recipe => {
       return id === recipe.id
     })
-    this.setState({ singleRecipe: singleRecipe})
+    this.setState({ singleRecipe: singleRecipe, filteredRecipes: this.state.recipes })
   }
 
   handleChange = (event) => {
