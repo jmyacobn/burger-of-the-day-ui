@@ -67,7 +67,7 @@ class App extends Component {
               <section className='all-recipes'>
                 <h1 className='title'>Burger of the Day</h1>
                 <SearchBar handleChange={this.handleChange}/>
-                <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe} filteredRecipes={this.state.filteredRecipes} userInput={this.state.userInput}/>
+                <Recipes recipes={this.state.recipes} viewRecipe={this.viewRecipe} filteredRecipes={this.state.filteredRecipes} userInput={this.state.userInput} loading={this.state.loading}/>
               </section>
             </Route>
             <Route exact path='/recipe/:id' render={( {match} ) => {

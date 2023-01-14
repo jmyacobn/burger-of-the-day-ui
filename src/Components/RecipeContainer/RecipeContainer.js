@@ -3,7 +3,7 @@ import RecipeCard from '../RecipeCard/RecipeCard';
 import PropTypes from 'prop-types';
 import './RecipeContainer.css';
 
-const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput} ) => {
+const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput, loading} ) => {
   let recipesToDisplay
   if(userInput === '') {
     recipesToDisplay = recipes;
@@ -36,5 +36,6 @@ Recipes.propTypes = {
   recipes: PropTypes.array.isRequired,
   viewRecipe: PropTypes.func.isRequired,
   filteredRecipes: PropTypes.array.isRequired,
-  userInput: PropTypes.string.isRequired
+  userInput: PropTypes.string.isRequired,
+  loading: PropTypes.bool.isRequired
 }
