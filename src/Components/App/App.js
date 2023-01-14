@@ -6,6 +6,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import error from '../../../src/assets/error.png';
 import { getRecipes } from '../APIcalls/APIcalls';
 import { Switch, Route } from 'react-router-dom';
+import BadURL from '../BadURL/BadURL';
 import './App.css';
 
 class App extends Component {
@@ -81,6 +82,7 @@ class App extends Component {
             <Route exact path='/recipe/:id'>
               <RecipeDetails singleRecipe={this.state.singleRecipe}/>
             </Route>
+            <Route component={BadURL}/>
           </Switch>
           }
         </main>
