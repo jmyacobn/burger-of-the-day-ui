@@ -51,7 +51,6 @@ class App extends Component {
         return recipe
       }
     })
-    console.log(this.state.filteredRecipes)
     this.setState({ filteredRecipes: filteredByIngredients })
   }
 
