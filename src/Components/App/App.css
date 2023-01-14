@@ -14,7 +14,7 @@
 
 header {
   height: 50%;
-  background-image: url('../../../src/banner.jpg');
+  background-image: url('../../../src/assets/banner.jpg');
   background-size: cover;
 }
 
