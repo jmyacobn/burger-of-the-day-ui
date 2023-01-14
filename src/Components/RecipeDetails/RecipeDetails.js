@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './RecipeDetails.css';
 
 const RecipeDetails = ( { singleRecipe } ) => {
@@ -18,19 +19,25 @@ const RecipeDetails = ( { singleRecipe } ) => {
   })
   
   return (
-    <article className='single-recipe'>
-      <h1>{singleRecipe.name}</h1>
-      <p className='recipe-details'>{singleRecipe.description}</p>
-      <p className='recipe-details'>Serving Size: Makes {singleRecipe.servings}.</p>
-      <div className='recipe-instructions'>
-        <div className='ingredients'>
-          <ul>Ingredients: {eachIngredient}</ul>
+    <section>
+      <Link to='/'>
+        <button>Go Back</button>
+      </Link>
+      <article className='single-recipe'>
+        <h1>{singleRecipe.name}</h1>
+        <p className='recipe-details'>{singleRecipe.description}</p>
+        <p className='recipe-details'>Serving Size: Makes {singleRecipe.servings}.</p>
+        <div className='recipe-instructions'>
+          <div className='ingredients'>
+            <ul>Ingredients: {eachIngredient}</ul>
+          </div>
+          <div className='instructions'>
+            <ol type='1'>Instructions: {eachStep}</ol>
+          </div>
         </div>
-        <div className='instructions'>
-          <ol type='1'>Instructions: {eachStep}</ol>
-        </div>
-      </div>
-    </article>
+      </article>
+    </section>
+    
   )
 }
 
