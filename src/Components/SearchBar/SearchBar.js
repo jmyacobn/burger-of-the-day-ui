@@ -2,7 +2,7 @@ import './SearchBar.css';
 
 const SearchBar = ( {handleChange} ) => {
   return (
-    <form>
+    <form onSubmit={event => event.preventDefault() }>
       <input 
         aria-label='search-input' 
         type='search' 
