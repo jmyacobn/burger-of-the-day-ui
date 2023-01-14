@@ -47,8 +47,7 @@ class App extends Component {
     const filteredByIngredients = this.state.recipes.filter(recipe => {
       let value = event.target.value.toLowerCase()
       let ingredient = recipe.ingredients.join(", ").toLowerCase()
-      let description = recipe.description.toLowerCase()
-      if(ingredient.includes(value) || description.includes(value)) {
+      if(ingredient.includes(value)) {
         return recipe
       }
     })
