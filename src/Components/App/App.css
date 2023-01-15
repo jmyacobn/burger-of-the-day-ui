@@ -43,9 +43,10 @@ a {
 }
 
 .error {
+  font-family: 'Gloria Hallelujah';
   text-align: center;
   color: #ad1d07;
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 5vh;
 }
 
