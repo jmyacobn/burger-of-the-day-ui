@@ -6,7 +6,7 @@ import './RecipeCard.css';
 const RecipeCard = ( { viewRecipe, id, name, price} ) => {
   return (
     <Link to={`/recipe/${id}`}>
-      <article onClick={()=> viewRecipe(id)} className='recipe-card' key={id}>
+      <article onClick={()=> viewRecipe(id)} className='recipe-card' key={id} id={id}>
         <div className='label'>
         <h2>Burger of the Day</h2>
         </div>

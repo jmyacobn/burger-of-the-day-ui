@@ -1,0 +1,33 @@
+{
+  "movie": 
+  {
+    "id": 2,
+    "name": "Eggers Can't Be Cheesers Burger",
+    "price": "$5.95",
+    "servings": "4 burgers", 
+    "description": "An all-beef patty topped with American cheese and a fried egg sunny-side up. Served with hot sauce and a piece of lettuce on a plain bun. It’s eggsactly as eggstraordinary as it sounds. Eggs.",
+    "ingredients": ["1 lb ground beef", "8 slices American cheese", "4 large eggs", "butter", "4 English muffins", "green leaf lettuce", "hot sauce (optional)"],
+    "instructions": [
+      {
+        "step": 1,
+        "instruction": "Make 4 patties, season both sides with salt and pepper, and cook the burgers. When they/’re just about done, top with the cheese (2 slices per burger)."
+      },
+      {
+        "step": 2,
+        "instruction": "In a large frying pan, cook your eggs sunny-side up over a bit of butter. No flipping these guys—that’s what sunny side up means. It’s also a good way to describe your attitude these days."
+      },
+      {
+        "step": 3,
+        "instruction": "Toast your Engish muffins."
+      },
+      {
+        "step": 4,
+        "instruction": "Build your burger: Spread a tiny bit of butter on your toasted English muffins, then bottom muffin, cheeseburger, and egg on top. Finish it off with hot sauce, and the muffin on top. YOUR muffin top is gonna love it!"
+      },
+      {
+        "step": 5,
+        "instruction": "Grab a napkin - you\"ll need it!"
+      }
+    ]
+  }
+}

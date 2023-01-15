@@ -22,7 +22,7 @@ const RecipeDetails = ( { singleRecipe } ) => {
   return (
     <section>
       <Link to='/'>
-        <button>Go Back</button>
+        <button id='go-back'>Go Back</button>
       </Link>
       <article className='single-recipe'>
         <h1>{singleRecipe.name}</h1>
