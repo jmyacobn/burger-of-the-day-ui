@@ -6,17 +6,20 @@ describe('Page Load Flows', () => {
     })
     cy.visit('http://localhost:3000')
   })
+
   it('should display logo and banner image in the navigation bar upon page load', () => {
     cy.get('.logo').should('be.visible')
       .get('[alt="Bobs Burgers Logo"]').should('be.visible')
       .get('header').should('be.visible')
   })
+
   it('should display title and search bar for the all recipes page upon load', () => {
     cy.get('h1').contains('Burger of the Day')
       .get('form').should('exist')
       .get('[placeholder="Search by ingredient..."]')
       .should('have.value', "")
   })
+
   it('should display all recipes upon page load', () => {
     cy.get('.recipe-container').within(() => {
       cy.get('.recipe-card').should('have.length', 7)
@@ -41,6 +44,7 @@ describe('Filter by Ingredient Flows', () => {
     })
     cy.visit('http://localhost:3000')
   })
+
   it('should modify search bar input as user types', () => {
     cy.get('[placeholder="Search by ingredient..."]')
       .type('eg')
@@ -50,6 +54,7 @@ describe('Filter by Ingredient Flows', () => {
       .type('s')
       .should('have.value', "eggs")
   })
+
   it('should filter the recipes that are displayed as user types in search bar', () => {
     cy.get('[placeholder="Search by ingredient..."]')
       .type('egg')
@@ -80,6 +85,7 @@ describe('Filter by Ingredient Flows', () => {
         .get('.recipe-card').eq(1).find('.name').contains("Human Polenta-Pede Burger")
     })
   })
+  
   it('should display message to user if no recipes match their search and should not display any recipe cards', () => {
     cy.get('[placeholder="Search by ingredient..."]')
       .type('{selectall}{backspace}socks')
