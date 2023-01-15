@@ -22,4 +22,46 @@ describe('Single Recipe Page User Flow', () => {
       .get('.instructions').should('exist')
       .get('ol > :nth-child(1)').contains('Make 4 patties, season both sides with salt and pepper, and cook the burgers. When they/’re just about done, top with the cheese (2 slices per burger).')
   })
+
+  it('should navigate home when you click the go back button and display all recipes again', () => {
+    cy.intercept('http://localhost:3001/api/v1/recipes', {
+      method: 'GET',
+      fixture: '../fixtures/recipes.json'
+    })
+    cy.get('#go-back').click()
+    cy.visit('http://localhost:3000')
+    cy.get('.recipe-container').within(() => {
+      cy.get('.recipe-card').should('have.length', 7)
+        .get('.label').contains('Burger of the Day')
+        .get('.recipe-card').eq(0).find('.name').contains("'New Bacon-ings' - Comes with Bacon")
+        .get('.recipe-card').eq(1).find('.name').contains("Eggers Can't Be Cheesers Burger")
+        .get('.recipe-card').eq(2).find('.name').contains("Sweaty Palms Burger")
+        .get('.recipe-card').eq(3).find('.name').contains("Pickle Me Funny Bone Burger")
+        .get('.recipe-card').eq(4).find('.name').contains("Chile Relleno-You-Didn't Burger")
+        .get('.recipe-card').eq(5).find('.name').contains("Sympathy for the Deviled Egg Burger")
+        .get('.recipe-card').eq(6).find('.name').contains("Human Polenta-Pede Burger")
+        .get('.price').contains('$5.95')
+    })
+  })
+
+  it('should also navigate home when you click the Bob\'s burgers logo and display all recipes again', () => {
+    cy.intercept('http://localhost:3001/api/v1/recipes', {
+      method: 'GET',
+      fixture: '../fixtures/recipes.json'
+    })
+    cy.get('.logo').click()
+    cy.visit('http://localhost:3000')
+    cy.get('.recipe-container').within(() => {
+      cy.get('.recipe-card').should('have.length', 7)
+        .get('.label').contains('Burger of the Day')
+        .get('.recipe-card').eq(0).find('.name').contains("'New Bacon-ings' - Comes with Bacon")
+        .get('.recipe-card').eq(1).find('.name').contains("Eggers Can't Be Cheesers Burger")
+        .get('.recipe-card').eq(2).find('.name').contains("Sweaty Palms Burger")
+        .get('.recipe-card').eq(3).find('.name').contains("Pickle Me Funny Bone Burger")
+        .get('.recipe-card').eq(4).find('.name').contains("Chile Relleno-You-Didn't Burger")
+        .get('.recipe-card').eq(5).find('.name').contains("Sympathy for the Deviled Egg Burger")
+        .get('.recipe-card').eq(6).find('.name').contains("Human Polenta-Pede Burger")
+        .get('.price').contains('$5.95')
+    })
+  })
 })
