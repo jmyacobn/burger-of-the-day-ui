@@ -14,7 +14,10 @@ describe('Single Recipe Page User Flow', () => {
       .get('header').should('be.visible')
       .get('#go-back').contains('Go Back')
       .get('.single-recipe').should('exist')
-      .get('.single-recipe > :nth-child(1)').contains("Eggers Can't Be Cheesers Burger")
+  })
+
+  it('should display the same recipe that you clicked on the home', () => {
+    cy.get('.single-recipe > :nth-child(1)').contains("Eggers Can't Be Cheesers Burger")
       .get('.single-recipe > :nth-child(2)').contains("An all-beef patty topped with American cheese and a fried egg sunny-side up. Served with hot sauce and a piece of lettuce on a plain bun. It’s eggsactly as eggstraordinary as it sounds. Eggs.")
       .get('.single-recipe > :nth-child(3)').contains("Serving Size: Makes 4 burgers.")
       .get('.ingredients').should('exist')
