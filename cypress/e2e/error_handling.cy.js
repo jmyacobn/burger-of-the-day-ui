@@ -1,5 +1,5 @@
 describe('Failed Server User Flow', () => {
-  it('should display message to user if server fails on page load', () => {
+  it('should display navigation bar and message to user if server fails on page load', () => {
     cy.intercept('http://localhost:3001/api/v1/recipes', {
       method: 'GET',
       statusCode: 404,
@@ -7,6 +7,9 @@ describe('Failed Server User Flow', () => {
     })
     cy.visit('http://localhost:3000')
     cy.get('.error').contains('Oops, something went wrong. Please try again later.')
+      .get('.logo').should('be.visible')
+      .get('[alt="Bobs Burgers Logo"]').should('be.visible')
+      .get('header').should('be.visible')
       .get('.error-img').should('exist')
   })
 })
