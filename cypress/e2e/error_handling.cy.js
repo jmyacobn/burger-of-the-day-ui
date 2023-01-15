@@ -11,6 +11,7 @@ describe('Failed Server User Flow', () => {
       .get('[alt="Bobs Burgers Logo"]').should('be.visible')
       .get('header').should('be.visible')
       .get('.error-img').should('exist')
+      .get('.recipe-container').should('not.exist')
   })
 })
 
@@ -29,6 +30,7 @@ describe('Bad URL User Flow', () => {
     cy.get('.error').contains('Oops, URL not found. Please try again.')
       .get('.redirect-button').contains('Redirect Home')
       .get('.error-img').should('exist')
+      .get('.recipe-container').should('not.exist')
   })
 
   it('should redirect user to Bob\'s Burgers homepage when they click Redirect Home button', () => {
@@ -47,6 +49,7 @@ describe('Bad URL User Flow', () => {
             fixture: '../fixtures/recipes.json'
         })
         cy.visit('http://localhost:3000')
+        .get('.recipe-container').should('exist')
     })
 })
 
