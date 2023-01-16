@@ -17,7 +17,7 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Preview of Application
-
+GIF COMING SOON!!!
 
 ## Installation and Deployment
 
