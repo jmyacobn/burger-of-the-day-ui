@@ -4,7 +4,7 @@
 
 button {
   height: 7vh;
-  width: 10vw;
+  width: 20vw;
   margin-top: 5vh;
   cursor: pointer;
   border-radius: 0.7em;
@@ -67,4 +67,23 @@ li:first-child {
 
 ul, ol, li {
   font-family: 'Gloria Hallelujah';
+}
+
+@media (min-width: 500px) and (max-width: 1050px) {
+  button {
+    width: 30vw;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  button {
+    width: 40vw;
+    margin-bottom: 5vh;
+  }
+
+  .recipe-instructions {
+    display: flex;
+    flex-direction: column;
+  }
 }
