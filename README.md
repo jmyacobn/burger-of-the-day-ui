@@ -56,6 +56,8 @@ I accomplished these learning goals by creating my own backend API in Express an
 ## Reflections
 
 ## Future Features
+- Users can save their favorite Burgers of the Day using local storage, and filter by their favorites!
+- Users can create and share their own punny “Burger of the Day” recipe!
 
 ## Contact
 Jennifer Yacoubian [GitHub](https://github.com/jmyacobn) | [LinkedIn](https://www.linkedin.com/in/jennifer-yacoubian/)
