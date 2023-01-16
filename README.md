@@ -15,7 +15,6 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-![Express](https://img.shields.io/badge/express-D100D1.svg?style=for-the-badge)
 
 ## Preview of Application
 
