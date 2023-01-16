@@ -27,6 +27,8 @@ I accomplished these learning goals by creating my own backend API in Express an
 
 ## Project Roadmap
 
+[MVP Project Proposal](https://docs.google.com/document/d/1TbYZ-nW2PkP5plAAteY6mmBAbFTXSl3qMF_PHhEnpbY/edit?usp=sharing)
+
 ## Reflections
 
 
