@@ -38,7 +38,6 @@ const RecipeDetails = ( { singleRecipe } ) => {
         </div>
       </article>
     </section>
-    
   )
 }
 
