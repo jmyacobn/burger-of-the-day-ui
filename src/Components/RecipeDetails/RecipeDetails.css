@@ -2,9 +2,13 @@
   display: flex;
 }
 
+section {
+  background-color: #ffebb0;
+}
+
 button {
-  height: 7vh;
-  width: 10vw;
+  width: 21vw;
+  height: 10vh;
   margin-top: 5vh;
   cursor: pointer;
   border-radius: 0.7em;
@@ -67,4 +71,22 @@ li:first-child {
 
 ul, ol, li {
   font-family: 'Gloria Hallelujah';
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  button {
+    margin-bottom: 5vh;
+    height: 8vw;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 499px) {
+  button {
+    width: 40vw;
+    margin-bottom: 5vh;
+  }
+
+  .single-recipe {
+    margin-left: 10vw;
+  }
 }

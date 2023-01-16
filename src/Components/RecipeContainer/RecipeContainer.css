@@ -17,3 +17,27 @@
   font-size: 2em;
 }
 
+@media (min-width: 900px) and (max-width: 1125px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 599px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: none;
+    grid-gap: 12vw;
+  }
+}
+
