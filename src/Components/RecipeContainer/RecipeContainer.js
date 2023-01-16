@@ -5,11 +5,7 @@ import './RecipeContainer.css';
 
 const Recipes = ( {recipes, viewRecipe, filteredRecipes, userInput, loading} ) => {
   let recipesToDisplay
-  if(userInput === '') {
-    recipesToDisplay = recipes;
-  } else {
-    recipesToDisplay = filteredRecipes;
-  }
+  userInput === '' ? recipesToDisplay = recipes : recipesToDisplay = filteredRecipes
   
   const createDisplay = (recipesToDisplay) => {
     if(recipesToDisplay.length > 0) {

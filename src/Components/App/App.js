@@ -34,9 +34,7 @@ class App extends Component {
   }
 
   viewRecipe = (id) => {
-    const singleRecipe = this.state.recipes.find(recipe => {
-      return id === recipe.id
-    })
+    const singleRecipe = this.state.recipes.find(recipe => id === recipe.id)
     this.setState({ singleRecipe: singleRecipe, filteredRecipes: this.state.recipes })
   }
 
