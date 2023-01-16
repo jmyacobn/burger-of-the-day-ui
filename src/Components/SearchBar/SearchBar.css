@@ -8,5 +8,17 @@ input {
   font-style: bold;
   border-width: medium;
   border-style: solid;
+}
 
+@media (min-width: 600px) and (max-width: 900px) {
+  input {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  input {
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
 }
