@@ -40,4 +40,6 @@ I accomplished these learning goals by creating my own backend API in Express an
 
 ## Reflections
 
+## Contact
+Jennifer Yacoubian [GitHub](https://github.com/jmyacobn) | [LinkedIn](https://www.linkedin.com/in/jennifer-yacoubian/) | [Email](jyacoubian@gmail.com)
 
