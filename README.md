@@ -28,6 +28,9 @@ I accomplished these learning goals by creating my own backend API in Express an
 ## Project Roadmap
 
 [MVP Project Proposal](https://docs.google.com/document/d/1TbYZ-nW2PkP5plAAteY6mmBAbFTXSl3qMF_PHhEnpbY/edit?usp=sharing)
+[Trello Project Board](https://trello.com/b/5SAGqjAW/burger-of-the-day-project-board)
+[Wireframe Design](https://docs.google.com/document/d/1d-tkfLvVhsgDKUkMf55Vu5qpucZQymsoNIoJ7ZKmchE/edit?usp=sharing)
+[Component Architecture Map](coming soon!)
 
 ## Reflections
 
