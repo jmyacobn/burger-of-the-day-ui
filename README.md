@@ -26,12 +26,12 @@ In your terminal:
 1. Clone down this directory: `git clone https://github.com/jmyacobn/burger-of-the-day-ui`.
 2. Cd into this directory: `cd burger-of-the-day-ui`.
 3. Install dependencies for this repo: `npm install`.
-4. Clone down the [backend repo]('https://github.com/jmyacobn/burger-of-the-day-api').
+4. Clone down the [backend repo](https://github.com/jmyacobn/burger-of-the-day-api).
 5. Follow the directions found in the README.
 6. Run `npm start` to start application in your browser.
 
 ### Deployed Site
-1. Clone down the [backend repo]('https://github.com/jmyacobn/burger-of-the-day-api').
+1. Clone down the [backend repo](https://github.com/jmyacobn/burger-of-the-day-api).
 2. 
 
 
