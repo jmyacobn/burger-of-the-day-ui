@@ -19,10 +19,21 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ## Preview of Application
 
 
-## Installation
+## Installation and Deployment
 
+### Setup
+In your terminal:
+1. Clone down this directory: `git clone https://github.com/jmyacobn/burger-of-the-day-ui`.
+2. Cd into this directory: `cd burger-of-the-day-ui`.
+3. Install dependencies for this repo: `npm install`.
+4. Clone down the [backend repo]('https://github.com/jmyacobn/burger-of-the-day-api').
+5. Follow the directions found in the README.
+6. Run `npm start` to start application in your browser.
 
-## Deployment
+### Deployed Link
+1. Frontend: 
+1. Backend: Clone down this [backend repo]('https://github.com/FrazierLE/strangers-api') in your terminal. 
+* Follow directions in backend README.md
 
 
 ## Learning Goals
