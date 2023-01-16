@@ -16,9 +16,9 @@ input {
   }
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (min-width: 280px) and (max-width: 599px) {
   input {
-    width: 70vw;
+    width: 80vw;
     margin-bottom: 5vh;
   }
 }

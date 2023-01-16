@@ -2,9 +2,13 @@
   display: flex;
 }
 
+section {
+  background-color: #ffebb0;
+}
+
 button {
   width: 21vw;
-  height: 7vh;
+  height: 10vh;
   margin-top: 5vh;
   cursor: pointer;
   border-radius: 0.7em;
@@ -72,13 +76,13 @@ ul, ol, li {
 @media (min-width: 500px) and (max-width: 1000px) {
   button {
     margin-bottom: 5vh;
+    height: 8vw;
   }
 }
 
 @media (min-width: 280px) and (max-width: 499px) {
   button {
     width: 40vw;
-    height: 10vh;
     margin-bottom: 5vh;
   }
 
