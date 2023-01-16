@@ -30,10 +30,9 @@ In your terminal:
 5. Follow the directions found in the README.
 6. Run `npm start` to start application in your browser.
 
-### Deployed Link
-1. Frontend: 
-1. Backend: Clone down this [backend repo]('https://github.com/FrazierLE/strangers-api') in your terminal. 
-* Follow directions in backend README.md
+### Deployed Site
+1. Clone down the [backend repo]('https://github.com/jmyacobn/burger-of-the-day-api').
+2. 
 
 
 ## Learning Goals
