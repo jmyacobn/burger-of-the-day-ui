@@ -18,9 +18,12 @@ I developed this project as my final showcase project at the end of Module 3 at 
 
 ## Preview of Application
 
+
 ## Installation
 
+
 ## Deployment
+
 
 ## Learning Goals
 Demonstrate proficiency of the following:
@@ -40,6 +43,6 @@ I accomplished these learning goals by creating my own backend API in Express an
 
 ## Reflections
 
-## Contact
-Jennifer Yacoubian [GitHub](https://github.com/jmyacobn) | [LinkedIn](https://www.linkedin.com/in/jennifer-yacoubian/) | [Email](jyacoubian@gmail.com)
 
+## Contact
+Jennifer Yacoubian [GitHub](https://github.com/jmyacobn) | [LinkedIn](https://www.linkedin.com/in/jennifer-yacoubian/)
