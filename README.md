@@ -44,7 +44,7 @@ Demonstrate proficiency of the following:
 - Asynchronous JavaScript
 - End-to-end testing with Cypress
 
-I accomplished these learning goals by creating my own backend API in Express and using React to display data from my API, creating functionality that allows the user to filter recipes by ingredients, select a burger recipe, and navigate to a page that shows a description, serving size, ingredients, and step-by-step instructions to make the recipe. Using Router ensured that the user can move back and forth between the home view and recipe view. All user flows were tested in Cypress.
+I accomplished these learning goals by creating my own backend API with Node.js and Express, using React to display data from my API, creating functionality that allows the user to filter recipes by ingredients, select a burger recipe, and navigate to a page that shows a description, serving size, ingredients, and step-by-step instructions to make the recipe. Using Router ensured that the user can move back and forth between the home view and recipe view. All user flows were tested in Cypress.
 
 ## Project Roadmap
 
