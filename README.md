@@ -8,6 +8,16 @@ The Bob's Burgers Burger of the Day application was created for the witty Bob's 
 ## Context
 I developed this project as my final showcase project at the end of Module 3 at the Turing School for Software Development and Design after 18 weeks as a front-end developer. The project took at approximately six days to completely from planning to documentation while balancing a full courseload.
 
+### Deployed Site
+1. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api): `git clone https://github.com/jmyacobn/burger-of-the-day-api`.
+2. Install the dependencies: run `npm install`.
+3. Fire up the server: run `node server.js` or `nodemon server.js`.
+4. [Deployment Link](https://burger-of-the-day-ui-jmyacobn.vercel.app/)
+
+
+## Preview of Application
+![](https://media.giphy.com/media/mD0kf7u8l5IDHGPtT3/giphy.gif)
+
 ## Built With
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -15,9 +25,6 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-
-## Preview of Application
-![](https://media.giphy.com/media/mD0kf7u8l5IDHGPtT3/giphy.gif)
 
 ## Installation and Deployment
 ### Setup
@@ -28,13 +35,6 @@ In your terminal:
 4. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api).
 5. Follow the directions found in the README.
 6. Run `npm start` to start application in your browser.
-
-### Deployed Site
-1. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api): `git clone https://github.com/jmyacobn/burger-of-the-day-api`.
-2. Install the dependencies: run `npm install`.
-3. Fire up the server: run `node server.js` or `nodemon server.js`.
-4. [Deployment Link](https://burger-of-the-day-ui-jmyacobn.vercel.app/)
-
 
 ## Learning Goals
 Demonstrate proficiency of the following:
