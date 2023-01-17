@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/106957849/212765467-e63b18a8-648e-4a39-862e-df3dc93c6176.png" width=25% height=25%>
+<img src="https://user-images.githubusercontent.com/106957849/212765467-e63b18a8-648e-4a39-862e-df3dc93c6176.png" width=30% height=30%>
 
 # Burger of the Day
 
@@ -51,7 +51,7 @@ I accomplished these learning goals by creating my own backend API with Node.js 
 [MVP Project Proposal](https://docs.google.com/document/d/1TbYZ-nW2PkP5plAAteY6mmBAbFTXSl3qMF_PHhEnpbY/edit?usp=sharing) | 
 [Trello Project Board](https://trello.com/b/5SAGqjAW/burger-of-the-day-project-board) | 
 [Wireframe Design](https://docs.google.com/document/d/1d-tkfLvVhsgDKUkMf55Vu5qpucZQymsoNIoJ7ZKmchE/edit?usp=sharing) | 
-[Component Architecture Map](coming soon!)
+[Component Architecture Map](https://excalidraw.com/#json=Kn8hHbhRI-wMeQeJoYSi3,B7r_lLxYg4PnxOz-Q6RcRw)
 
 ## Reflections
 
