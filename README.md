@@ -8,15 +8,14 @@ The Bob's Burgers Burger of the Day application was created for the witty Bob's 
 ## Context
 I developed this project as my final showcase project at the end of Module 3 at the Turing School for Software Development and Design after 18 weeks as a front-end developer. The project took at approximately six days to completely from planning to documentation while balancing a full courseload.
 
+## Preview of Application
+![](https://media.giphy.com/media/mD0kf7u8l5IDHGPtT3/giphy.gif)
+
 ## Deployed Site
 1. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api): `git clone https://github.com/jmyacobn/burger-of-the-day-api`.
 2. Install the dependencies: run `npm install`.
 3. Fire up the server: run `node server.js` or `nodemon server.js`.
 4. [Deployment Link](https://burger-of-the-day-ui-jmyacobn.vercel.app/)
-
-
-## Preview of Application
-![](https://media.giphy.com/media/mD0kf7u8l5IDHGPtT3/giphy.gif)
 
 ## Built With
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
