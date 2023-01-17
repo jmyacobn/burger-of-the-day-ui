@@ -17,7 +17,7 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Preview of Application
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/35b94a2e345343dc99fb807827e1ff78" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+![GIPHY](https://www.loom.com/embed/35b94a2e345343dc99fb807827e1ff78)
 
 ## Installation and Deployment
 
