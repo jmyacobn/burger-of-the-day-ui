@@ -17,10 +17,9 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Preview of Application
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/35b94a2e345343dc99fb807827e1ff78" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 ## Installation and Deployment
-
 ### Setup
 In your terminal:
 1. Clone down this directory: `git clone https://github.com/jmyacobn/burger-of-the-day-ui`.
@@ -47,7 +46,6 @@ Demonstrate proficiency of the following:
 I accomplished these learning goals by creating my own backend API with Node.js and Express, using React to display data from my API, creating functionality that allows the user to filter recipes by ingredients, select a burger recipe, and navigate to a page that shows a description, serving size, ingredients, and step-by-step instructions to make the recipe. Using Router ensured that the user can move back and forth between the home view and recipe view. All user flows were tested in Cypress.
 
 ## Project Roadmap
-
 [MVP Project Proposal](https://docs.google.com/document/d/1TbYZ-nW2PkP5plAAteY6mmBAbFTXSl3qMF_PHhEnpbY/edit?usp=sharing) | 
 [Trello Project Board](https://trello.com/b/5SAGqjAW/burger-of-the-day-project-board) | 
 [Wireframe Design](https://docs.google.com/document/d/1d-tkfLvVhsgDKUkMf55Vu5qpucZQymsoNIoJ7ZKmchE/edit?usp=sharing) | 
