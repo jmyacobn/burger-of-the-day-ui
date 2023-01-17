@@ -52,6 +52,7 @@ I accomplished these learning goals by creating my own backend API with Node.js 
 [Component Architecture Map](https://excalidraw.com/#json=Kn8hHbhRI-wMeQeJoYSi3,B7r_lLxYg4PnxOz-Q6RcRw)
 
 ## Reflections
+This was my first solo project using React and using media queries to make an application reponsive across devices. While I deepened my understanding of react fundamentals, if I had to do it again, I might have challenged myself to investigate and implement hooks and Router v6. My greatest win for this project is the end to end Cypress testing. 
 
 ## Future Features
 - Deployed API
