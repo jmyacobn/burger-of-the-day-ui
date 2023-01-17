@@ -25,8 +25,7 @@ I developed this project as my final showcase project at the end of Module 3 at 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-## Installation
-### Setup
+## Setup
 In your terminal:
 1. Clone down this directory: `git clone https://github.com/jmyacobn/burger-of-the-day-ui`.
 2. Cd into this directory: `cd burger-of-the-day-ui`.
