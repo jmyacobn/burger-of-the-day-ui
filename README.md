@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<img src="https://user-images.githubusercontent.com/106957849/212765467-e63b18a8-648e-4a39-862e-df3dc93c6176.png" width=22% height=22%>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Burger of the Day
 
-## Available Scripts
+## Project Overview
+The Bob's Burgers Burger of the Day application was created for the witty Bob's Burgers' fanatics who look forward to the "punny" Burger of the Day boards each episode and desire to bring those burgers to life in their own kitchens (or grills). When a user visits the Burger of the Day application, they will see a display of 30 Burger of the Day Boards which the filter by their favorite ingredient or an ingredient they happen to have in their pantry. 
 
-In the project directory, you can run:
+## Context
+I developed this project as my final showcase project at the end of Module 3 at the Turing School for Software Development and Design after 18 weeks as a front-end developer. The project took at approximately six days to completely from planning to documentation while balancing a full courseload.
 
-### `npm start`
+## Preview of Application
+![](https://media.giphy.com/media/mD0kf7u8l5IDHGPtT3/giphy.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployed Site
+1. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api): `git clone https://github.com/jmyacobn/burger-of-the-day-api`.
+2. Install the dependencies: run `npm install`.
+3. Fire up the server: run `node server.js` or `nodemon server.js`.
+4. [Deployment Link](https://burger-of-the-day-ui-jmyacobn.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-### `npm test`
+## Setup
+In your terminal:
+1. Clone down this directory: `git clone https://github.com/jmyacobn/burger-of-the-day-ui`.
+2. Cd into this directory: `cd burger-of-the-day-ui`.
+3. Install dependencies for this repo: `npm install`.
+4. Clone down the [burger-of-the-day-api](https://github.com/jmyacobn/burger-of-the-day-api).
+5. Follow the directions found in the README.
+6. Run `npm start` to start application in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Learning Goals
+Demonstrate proficiency of the following:
+- React through displaying data from my API, allowing users to filter
+- Router
+- Asynchronous JavaScript
+- End-to-end testing with Cypress
 
-### `npm run build`
+I accomplished these learning goals by creating my own backend API with Node.js and Express, using React to display data from my API, creating functionality that allows the user to filter recipes by ingredients, select a burger recipe, and navigate to a page that shows a description, serving size, ingredients, and step-by-step instructions to make the recipe. Using Router ensured that the user can move back and forth between the home view and recipe view. All user flows were tested in Cypress.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Roadmap
+[MVP Project Proposal](https://docs.google.com/document/d/1TbYZ-nW2PkP5plAAteY6mmBAbFTXSl3qMF_PHhEnpbY/edit?usp=sharing) | 
+[Trello Project Board](https://trello.com/b/5SAGqjAW/burger-of-the-day-project-board) | 
+[Wireframe Design](https://docs.google.com/document/d/1d-tkfLvVhsgDKUkMf55Vu5qpucZQymsoNIoJ7ZKmchE/edit?usp=sharing) | 
+[Component Architecture Map](https://excalidraw.com/#json=Kn8hHbhRI-wMeQeJoYSi3,B7r_lLxYg4PnxOz-Q6RcRw)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Reflections
+This was my first solo project using React and using media queries to make an application reponsive across devices. While I deepened my understanding of react fundamentals, if I had to do it again, I might have challenged myself to investigate and implement hooks and Router v6. My greatest win for this project is the end to end Cypress testing. One challenge or reminder during this project was the asynchronous nature of JavaScript.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Features
+- Deployed API
+- Users can save their favorite Burgers of the Day, and filter by their favorites!
+- Users can create and share their own punny “Burger of the Day” recipe!
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Jennifer Yacoubian [GitHub](https://github.com/jmyacobn) | [LinkedIn](https://www.linkedin.com/in/jennifer-yacoubian/)
