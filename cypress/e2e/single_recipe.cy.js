@@ -1,6 +1,6 @@
 describe('Single Recipe Page User Flow', () => {
   beforeEach(() => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })
@@ -27,7 +27,7 @@ describe('Single Recipe Page User Flow', () => {
   })
 
   it('should navigate home when you click the go back button and display all recipes again', () => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })
@@ -48,7 +48,7 @@ describe('Single Recipe Page User Flow', () => {
   })
 
   it('should also navigate home when you click the Bob\'s burgers logo and display all recipes again', () => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })

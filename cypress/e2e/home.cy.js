@@ -1,6 +1,6 @@
 describe('Page Load Flows', () => {
   beforeEach(() => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })
@@ -38,7 +38,7 @@ describe('Page Load Flows', () => {
 
 describe('Filter by Ingredient Flows', () => {
   beforeEach(() => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })
@@ -115,7 +115,7 @@ describe('Filter by Ingredient Flows', () => {
 
 describe('Navigate to single recipe view', () => {
   beforeEach(() => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       fixture: '../fixtures/recipes.json'
     })

@@ -1,6 +1,6 @@
 describe('Failed Server User Flow', () => {
   it('should display navigation bar and message to user if server fails on page load', () => {
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
       method: 'GET',
       statusCode: 404,
       ok: false
@@ -35,7 +35,7 @@ describe('Bad URL User Flow', () => {
 
   it('should redirect user to Bob\'s Burgers homepage when they click Redirect Home button', () => {
     cy.get('.redirect-button').click()
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
             method: 'GET',
             fixture: '../fixtures/recipes.json'
         })
@@ -44,7 +44,7 @@ describe('Bad URL User Flow', () => {
 
   it('should also redirect user to Bob\'s Burgers homepage when they click Bob\'s Burgers logo', () => {
     cy.get('.logo').click()
-    cy.intercept('http://localhost:3001/api/v1/recipes', {
+    cy.intercept('https://burger-of-the-day-api.vercel.app/api/v1/recipes', {
             method: 'GET',
             fixture: '../fixtures/recipes.json'
         })
